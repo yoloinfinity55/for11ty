@@ -3,14 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+
 "scripts": {
   "start": "eleventy --serve",
-  "build": "eleventy"
+  "build": "cross-env NODE_ENV=production eleventy"
 },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.2"
+    "@11ty/eleventy": "^3.1.2",
+    "cross-env": "^10.0.0"
   }
 }
